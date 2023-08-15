@@ -158,9 +158,21 @@ body {
 }
 
 .clients__images {
-    margin-top: 96px;
+    margin-top: 70px;
     display: flex;
     justify-content: space-between;
+}
+
+.clients__images-link {
+    padding: 0 42px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.clients__images-link:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .guides {
