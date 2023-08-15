@@ -1,5 +1,4 @@
 main {
-    height: 5000px;
 }
 
 * {
@@ -10,8 +9,10 @@ main {
     --primary-color: #0f1b4c;
 }
 
-html {
+html,
+body {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -26,17 +27,28 @@ body {
     margin-right: auto;
 }
 
-.header {
+.fixed-header {
     background-color: #e6f0ff;
-    height: 100vh;
+    position: sticky;
+    top: -26px;
+    padding-top: 26px;
+    z-index: 1;
+}
+
+.hero-wrap {
+    background-color: #e6f0ff;
+    height: calc(100vh - 90px);
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .header__navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 0;
 }
 
 .header__navbar-list {
@@ -95,7 +107,6 @@ body {
 }
 
 .hero {
-    margin-top: 130px;
 }
 
 .info {

@@ -4,49 +4,129 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Project 01</title>
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/Favicon/" />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/Favicon//apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/Favicon//apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/Favicon//apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/Favicon//apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/Favicon//apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/Favicon//apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/Favicon//apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/Favicon//apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/Favicon//android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/Favicon//favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/Favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/Favicon//favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/Favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/Favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
     </head>
     <body>
+        <header class="fixed-header">
+            <div class="content">
+                <nav class="header__navbar">
+                    <a href="/"
+                        ><img src="./assets/img/logo.svg" alt="Besnik."
+                    /></a>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-item-link" href="/"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-item-link" href="#featured"
+                                >Features</a
+                            >
+                        </li>
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-item-link" href="#services"
+                                >Services</a
+                            >
+                        </li>
+                        <li class="header__navbar-item">
+                            <a
+                                class="header__navbar-item-link"
+                                href="#resources"
+                                >Resources</a
+                            >
+                        </li>
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-item-link" href="#contact"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                    <div class="header__navbar-actions">
+                        <a class="action-link" href="#!">Sign in</a>
+                        <a class="btn action-btn" href="#!">Sign up</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
         <main>
-            <header class="header">
+            <div class="hero-wrap">
                 <div class="content">
-                    <nav class="header__navbar">
-                        <img src="./assets/img/logo.svg" alt="Besnik." />
-                        <ul class="header__navbar-list">
-                            <li class="header__navbar-item">
-                                <a class="header__navbar-item-link" href="#!"
-                                    >Home</a
-                                >
-                            </li>
-                            <li class="header__navbar-item">
-                                <a class="header__navbar-item-link" href="#!"
-                                    >Features</a
-                                >
-                            </li>
-                            <li class="header__navbar-item">
-                                <a class="header__navbar-item-link" href="#!"
-                                    >Services</a
-                                >
-                            </li>
-                            <li class="header__navbar-item">
-                                <a class="header__navbar-item-link" href="#!"
-                                    >Resources</a
-                                >
-                            </li>
-                            <li class="header__navbar-item">
-                                <a class="header__navbar-item-link" href="#!"
-                                    >Contact</a
-                                >
-                            </li>
-                        </ul>
-                        <div class="header__navbar-actions">
-                            <a class="action-link" href="#!">Sign in</a>
-                            <a class="btn action-btn" href="#!">Sign up</a>
-                        </div>
-                    </nav>
-
                     <div class="hero">
                         <div class="info">
                             <p class="info__subtitle">
@@ -70,7 +150,7 @@
                         />
                     </div>
                 </div>
-            </header>
+            </div>
 
             <div class="clients">
                 <div class="content">
@@ -139,7 +219,7 @@
                 </div>
             </div>
 
-            <div class="guides">
+            <div id="services" class="guides">
                 <div class="content">
                     <h2 class="guides__subtitle">How its works?</h2>
                     <p class="guides__desc">
@@ -204,7 +284,7 @@
                 </div>
             </div>
 
-            <div class="featured">
+            <div id="featured" class="featured">
                 <div class="content">
                     <header>
                         <h2 class="featured__subtitle">Featured Properties</h2>
@@ -371,7 +451,7 @@
                 </div>
             </div>
 
-            <div class="stats">
+            <div id="resources" class="stats">
                 <div class="content">
                     <div class="stats__row">
                         <div class="stats__img-block">
@@ -539,7 +619,7 @@
                 </div>
             </div>
 
-            <div class="subcription">
+            <div id="contact" class="subcription">
                 <div class="content">
                     <div class="subcription__body">
                         <div class="subcription__body-info">
@@ -559,126 +639,120 @@
                     </div>
                 </div>
             </div>
-
-            <footer class="footer">
-                <div class="content">
-                    <div class="footer__row row-top">
-                        <div class="footer__column">
-                            <h3 class="footer__column-heading">Product</h3>
-                            <ul class="footer__column-list">
-                                <li class="footer__column-item">
-                                    <a href="" class="footer__column-link"
-                                        >Listing</a
-                                    >
-                                </li>
-                                <li class="footer__column-item">
-                                    <a href="" class="footer__column-link"
-                                        >Property</a
-                                    >
-                                </li>
-                                <li class="footer__column-item">
-                                    <a href="" class="footer__column-link"
-                                        >Agents</a
-                                    >
-                                </li>
-                                <li class="footer__column-item">
-                                    <a href="" class="footer__column-link"
-                                        >Blog</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer__column">
-                            <h3 class="footer__column-heading">Resources</h3>
-                            <ul class="footer__column-list">
-                                <li class="footer__column-item">
-                                    <a href="" class="footer__column-link"
-                                        >Our Homes</a
-                                    >
-                                </li>
-                                <li class="footer__column-item">
-                                    <a href="" class="footer__column-link"
-                                        >Member Stories</a
-                                    >
-                                </li>
-                                <li class="footer__column-item">
-                                    <a href="" class="footer__column-link"
-                                        >Video</a
-                                    >
-                                </li>
-                                <li class="footer__column-item">
-                                    <a href="" class="footer__column-link"
-                                        >Free trial</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer__column">
-                            <h3 class="footer__column-heading">Company</h3>
-                            <ul class="footer__column-list">
-                                <li class="footer__column-item">
-                                    <a href="" class="footer__column-link"
-                                        >Patnerships</a
-                                    >
-                                </li>
-                                <li class="footer__column-item">
-                                    <a href="" class="footer__column-link"
-                                        >Terms of use</a
-                                    >
-                                </li>
-                                <li class="footer__column-item">
-                                    <a href="" class="footer__column-link"
-                                        >Privacy</a
-                                    >
-                                </li>
-                                <li class="footer__column-item">
-                                    <a href="" class="footer__column-link"
-                                        >Sitemap</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer__column">
-                            <h3 class="footer__column-heading">Get in touch</h3>
-                            <p class="footer__column-desc">
-                                You’ll find your next home, in any style you
-                                prefer.
-                            </p>
-                            <div class="footer__column-social">
-                                <a href="" class="footer-column-social-link"
-                                    ><img
-                                        src="./assets/img/social-1.svg"
-                                        alt=""
-                                        class="footer__column-social-img"
-                                /></a>
-                                <a href="" class="footer-column-social-link"
-                                    ><img
-                                        src="./assets/img/social-2.svg"
-                                        alt=""
-                                        class="footer__column-social-img"
-                                /></a>
-                                <a href="" class="footer-column-social-link"
-                                    ><img
-                                        src="./assets/img/social-3.svg"
-                                        alt=""
-                                        class="footer__column-social-img"
-                                /></a>
-                            </div>
-                        </div>
+        </main>
+        <footer class="footer">
+            <div class="content">
+                <div class="footer__row row-top">
+                    <div class="footer__column">
+                        <h3 class="footer__column-heading">Product</h3>
+                        <ul class="footer__column-list">
+                            <li class="footer__column-item">
+                                <a href="" class="footer__column-link"
+                                    >Listing</a
+                                >
+                            </li>
+                            <li class="footer__column-item">
+                                <a href="" class="footer__column-link"
+                                    >Property</a
+                                >
+                            </li>
+                            <li class="footer__column-item">
+                                <a href="" class="footer__column-link"
+                                    >Agents</a
+                                >
+                            </li>
+                            <li class="footer__column-item">
+                                <a href="" class="footer__column-link">Blog</a>
+                            </li>
+                        </ul>
                     </div>
-
-                    <div class="footer__row row-bottom">
-                        <img
-                            src="./assets/img/logo.svg"
-                            alt=""
-                            class="footer__logo"
-                        />
-                        <p class="footer__copyright">
-                            Copyright 2020.com, All rights reserved.
+                    <div class="footer__column">
+                        <h3 class="footer__column-heading">Resources</h3>
+                        <ul class="footer__column-list">
+                            <li class="footer__column-item">
+                                <a href="" class="footer__column-link"
+                                    >Our Homes</a
+                                >
+                            </li>
+                            <li class="footer__column-item">
+                                <a href="" class="footer__column-link"
+                                    >Member Stories</a
+                                >
+                            </li>
+                            <li class="footer__column-item">
+                                <a href="" class="footer__column-link">Video</a>
+                            </li>
+                            <li class="footer__column-item">
+                                <a href="" class="footer__column-link"
+                                    >Free trial</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h3 class="footer__column-heading">Company</h3>
+                        <ul class="footer__column-list">
+                            <li class="footer__column-item">
+                                <a href="" class="footer__column-link"
+                                    >Patnerships</a
+                                >
+                            </li>
+                            <li class="footer__column-item">
+                                <a href="" class="footer__column-link"
+                                    >Terms of use</a
+                                >
+                            </li>
+                            <li class="footer__column-item">
+                                <a href="" class="footer__column-link"
+                                    >Privacy</a
+                                >
+                            </li>
+                            <li class="footer__column-item">
+                                <a href="" class="footer__column-link"
+                                    >Sitemap</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h3 class="footer__column-heading">Get in touch</h3>
+                        <p class="footer__column-desc">
+                            You’ll find your next home, in any style you prefer.
                         </p>
+                        <div class="footer__column-social">
+                            <a href="" class="footer-column-social-link"
+                                ><img
+                                    src="./assets/img/social-1.svg"
+                                    alt=""
+                                    class="footer__column-social-img"
+                            /></a>
+                            <a href="" class="footer-column-social-link"
+                                ><img
+                                    src="./assets/img/social-2.svg"
+                                    alt=""
+                                    class="footer__column-social-img"
+                            /></a>
+                            <a href="" class="footer-column-social-link"
+                                ><img
+                                    src="./assets/img/social-3.svg"
+                                    alt=""
+                                    class="footer__column-social-img"
+                            /></a>
+                        </div>
                     </div>
                 </div>
-            </footer>
-        </main>
+
+                <div class="footer__row row-bottom">
+                    <img
+                        src="./assets/img/logo.svg"
+                        alt=""
+                        class="footer__logo"
+                    />
+                    <p class="footer__copyright">
+                        Copyright 2020.com, All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
