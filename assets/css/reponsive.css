@@ -1,0 +1,257 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .mobide-header {
+        display: none;
+    }
+
+    .toggle-menu {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Tablet and Mobile */
+@media screen and (max-width: 991px) {
+    .header__navbar-list {
+        display: none;
+    }
+
+    .header__navbar {
+        position: relative;
+    }
+
+    .logo__img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .toggle-menu svg {
+        width: 30px;
+        height: 24px;
+        color: #666;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s ease;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        background-color: white;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: 0.3s ease-in;
+        padding: 60px;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .menu-drawer ul {
+        margin-top: 32px;
+    }
+
+    .menu-drawer ul a {
+        color: #333;
+        display: block;
+        padding: 14px 0;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    .separete {
+        border-top: 1.5px solid #ebebeb;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .info {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .info__desc {
+        width: 82%;
+        margin: 30px auto auto;
+    }
+
+    .clients__images {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .guides__item {
+        flex: 1;
+        margin: 0;
+    }
+
+    .featured__list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stats__row {
+        flex-direction: column;
+    }
+
+    .stats__img-block,
+    .stats__info {
+        width: 100%;
+    }
+
+    .stats__info {
+        padding: 0;
+        order: 1;
+    }
+
+    .stats__img-block {
+        order: 2;
+        margin-top: 80px;
+    }
+
+    .stats__info-subtitle {
+        width: 100%;
+    }
+
+    .stats__info-desc {
+        width: 100%;
+    }
+
+    .row-qty {
+        flex-direction: row;
+    }
+
+    .stats__qty {
+        font-size: 5rem;
+    }
+
+    .stats__qty-desc {
+        font-size: 1.5rem;
+    }
+
+    .subcription__body-img {
+        display: none;
+    }
+
+    .row-top {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        row-gap: 80px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .menu-drawer {
+        padding: 40px;
+        inset: 0 25% 0 0;
+    }
+
+    .hero-wrap {
+        height: calc(100vh - 77px);
+    }
+
+    .header__navbar-actions {
+        display: none;
+    }
+
+    .info__title {
+        font-size: 5.2rem;
+        margin-top: 20px;
+    }
+
+    .info__desc {
+        width: 100%;
+    }
+
+    .clients__images {
+        row-gap: 20px;
+    }
+
+    .guides__desc {
+        width: 100%;
+    }
+
+    .guides__list {
+        flex-direction: column;
+        row-gap: 60px;
+    }
+
+    .featured__list {
+        grid-template-columns: 1fr;
+    }
+
+    .featured__link {
+        display: none;
+    }
+
+    .view-all {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+
+    .stats__img {
+        width: 100%;
+    }
+
+    .stats__trend {
+        top: 20px;
+        left: 20px;
+        border-radius: 12px;
+    }
+
+    .row-qty {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 60px;
+    }
+
+    .subcription__body-info {
+        padding: 32px;
+    }
+
+    .subcription__body {
+        height: auto;
+    }
+
+    .row-top {
+        grid-template-columns: 1fr;
+    }
+
+    .row-bottom {
+        flex-direction: column;
+        row-gap: 24px;
+    }
+}

@@ -79,13 +79,28 @@
 
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/reponsive.css" />
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
     </head>
     <body>
         <header class="fixed-header">
             <div class="content">
                 <nav class="header__navbar">
-                    <a href="/"
+                    <label for="menu-checkbox" class="toggle-menu">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="16"
+                            width="14"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
+
+                    <a href="/" class="logo__img"
                         ><img src="./assets/img/logo.svg" alt="Besnik."
                     /></a>
                     <ul class="header__navbar-list">
@@ -122,6 +137,33 @@
                         <a class="btn action-btn" href="#!">Sign up</a>
                     </div>
                 </nav>
+            </div>
+        </header>
+
+        <header class="mobide-header">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+            <label for="menu-checkbox" class="menu-overlay"></label>
+            <div class="menu-drawer">
+                <a href="/"
+                    ><img src="./assets/img/logo.svg" alt="Besnik."
+                /></a>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Resources</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li class="show-on-mobile separete">
+                        <a href="">Sign in</a>
+                    </li>
+                    <li class="show-on-mobile"><a href="">Sign up</a></li>
+                </ul>
             </div>
         </header>
         <main>
@@ -172,7 +214,7 @@
                         <p class="clients__row-text">
                             More than 45,000+ companies trust besnik
                         </p>
-                        <p class="clients__row-text">
+                        <p class="clients__row-text hide-on-mobile">
                             5 Star Ratings (2k+ Review)
                         </p>
                     </div>
@@ -447,6 +489,10 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="view-all show-on-mobile">
+                        <a href="" class="btn">View All Properties</a>
                     </div>
                 </div>
             </div>

@@ -46,7 +46,6 @@ body {
 
 .header__navbar {
     display: flex;
-    justify-content: center;
     align-items: center;
     padding: 12px 0;
 }
@@ -253,6 +252,7 @@ body {
     margin-top: 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .arrow-right {
@@ -307,7 +307,8 @@ body {
 
 .featured__list {
     margin-top: 70px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
 }
 
@@ -582,7 +583,7 @@ body {
 }
 
 .row-top {
-    gap: 185px;
+    column-gap: 185px;
 }
 
 .footer__column {
